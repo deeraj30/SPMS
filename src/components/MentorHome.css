@@ -1,0 +1,89 @@
+/* src/components/MentorHome.css */
+
+.mentor-home-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+  }
+  
+  .left-side h1 {
+    margin: 0;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mentor-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .mentor-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .profile-button, .logout-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-button {
+    background-color: #008CBA; /* Blue */
+    color: white;
+  }
+  
+  .logout-button {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .center-navbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .center-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .center-navbar li {
+    display: inline;
+  }
+  
+  .center-navbar a {
+    text-decoration: none;
+    color: #4CAF50; /* Green */
+    padding: 10px 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .center-navbar a:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  

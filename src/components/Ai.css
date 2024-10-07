@@ -1,0 +1,69 @@
+/* src/components/Ai.css */
+
+.ai-project-container {
+    margin: 20px auto; /* Adjusted margin to create space around the container */
+    max-width: 500px; /* Reduced max-width for smaller container size */
+    max-height: 600px; /* Set a max-height for the container */
+    padding: 15px; /* Reduced padding for a more compact look */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensures correct positioning of child elements */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+  }
+  
+  .ai-project-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px; /* Slightly reduced font size */
+    margin-bottom: 15px; /* Reduced bottom margin */
+  }
+  
+  .ai-project-container h3 {
+    font-size: 20px; /* Slightly reduced font size */
+    margin-top: 15px; /* Reduced top margin */
+    color: #555;
+  }
+  
+  .ai-project-container p, 
+  .ai-project-container ul {
+    font-size: 14px; /* Reduced font size */
+    line-height: 1.5; /* Adjusted line height */
+    color: #666;
+  }
+  
+  .ai-project-container ul {
+    list-style-type: disc;
+    padding-left: 15px; /* Reduced padding for lists */
+  }
+  
+  .ai-project-container ul li {
+    margin-bottom: 5px; /* Reduced margin for list items */
+  }
+  
+  /* New styles for the project image */
+  .project-image {
+    display: block; /* Ensures the image is a block element */
+    margin: 10px auto; /* Centers the image horizontally */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .back-to-dashboard {
+    display: inline-block;
+    margin-top: 15px; /* Reduced margin for the button */
+    padding: 8px 12px; /* Adjusted padding for the button */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%; /* Button takes full width to stand out */
+    max-width: 180px; /* Reduced max width of the button */
+    align-self: center; /* Centers the button horizontally */
+  }
+  
+  .back-to-dashboard:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,47 @@
+/* src/components/Home.css */
+
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/picc.png') repeat-x; /* Set the image and repeat horizontally */
+  background-size: cover;
+  background-position: center;
+  animation: moveBackground 20s linear infinite; /* Add animation for movement */
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px 0; /* Adjust for the speed and movement */
+  }
+}
+
+.overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay on the image */
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.login-links {
+  display: flex;
+  gap: 20px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}

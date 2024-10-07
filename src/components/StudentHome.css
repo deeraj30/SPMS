@@ -1,0 +1,131 @@
+/* src/components/StudentHome.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.student-home-container {
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+  background: url('../assets/Stu_home.png') repeat-x; /* Background image path */
+  background-size: cover;
+  animation: moveBackground 20s linear infinite; /* Animation */
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px 0; /* Adjust for speed and direction */
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4b79a1;
+  color: white;
+}
+
+.left-side h1 {
+  margin: 0;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.student-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.student-name {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #4b79a1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.buttons button:hover {
+  background-color: #3b688e;
+  color: white;
+}
+
+.center-navbar {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.center-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.center-navbar li {
+  background-color: green; /* Change background color to green */
+  color: white; /* Change text color to white */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.center-navbar li:hover {
+  background-color: darkgreen; /* Darker shade on hover */
+}
+
+.center-navbar li a {
+  color: white; /* Ensure link text color is white */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Ensure the entire list item is clickable */
+  width: 100%; /* Make the link take full width */
+  height: 100%; /* Make the link take full height */
+}
+
+.center-navbar li a:hover {
+  text-decoration: underline; /* Underline links on hover for emphasis */
+}
+
+.profile-info {
+  margin-top: 20px;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2 {
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}

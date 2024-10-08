@@ -23,7 +23,7 @@ import Cricket from './components/Cricket'; // Import Cricket.js
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/SPMS_react_SpringBoot"> {/* Add basename for GitHub Pages */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/student-login" element={<StudentLogin />} />
@@ -37,14 +37,13 @@ const App = () => {
         <Route path="/project-submission" element={<ProjectSubmission />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/mentor-home" element={<MentorHome />} />
-        <Route path="/dashboard" element={<MentorDashboard />} />
         <Route path="/projects" element={<MentorProjects />} />
         <Route path="/students-list" element={<MentorStudentsList />} />
         <Route path="/submissions" element={<MentorSubmissions />} />
-        <Route path="/notifications" element={<MentorNotifications />} />
+        <Route path="/mentor-notifications" element={<MentorNotifications />} /> {/* Avoid duplicate route */}
         <Route path="/milestones" element={<MentorMilestones />} />
-        <Route path="/projects/cricket" element={<Cricket />} /> {/* Add Cricket route */}
-        <Route path="/projects/1" element={<Ai />} /> {/* Add Ai route */}
+        <Route path="/projects/cricket" element={<Cricket />} /> {/* Cricket project route */}
+        <Route path="/projects/1" element={<Ai />} /> {/* AI project route */}
       </Routes>
     </Router>
   );

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SPMS/static/css/main.89964a01.css",
-    "main.js": "/SPMS/static/js/main.945d8c5b.js",
+    "main.css": "/SPMS/static/css/main.e66699e0.css",
+    "main.js": "/SPMS/static/js/main.706fc0e6.js",
     "static/js/453.dc1947c9.chunk.js": "/SPMS/static/js/453.dc1947c9.chunk.js",
     "static/media/Stu_home.png": "/SPMS/static/media/Stu_home.1b993c7966367c078567.png",
     "static/media/photo.png": "/SPMS/static/media/photo.31bd30673e275c160399.png",
@@ -9,12 +9,12 @@
     "static/media/cricket.jpg": "/SPMS/static/media/cricket.f36bc8c8eb2a508ed2e8.jpg",
     "static/media/ai.png": "/SPMS/static/media/ai.0dc43224086e6dcadbaa.png",
     "index.html": "/SPMS/index.html",
-    "main.89964a01.css.map": "/SPMS/static/css/main.89964a01.css.map",
-    "main.945d8c5b.js.map": "/SPMS/static/js/main.945d8c5b.js.map",
+    "main.e66699e0.css.map": "/SPMS/static/css/main.e66699e0.css.map",
+    "main.706fc0e6.js.map": "/SPMS/static/js/main.706fc0e6.js.map",
     "453.dc1947c9.chunk.js.map": "/SPMS/static/js/453.dc1947c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89964a01.css",
-    "static/js/main.945d8c5b.js"
+    "static/css/main.e66699e0.css",
+    "static/js/main.706fc0e6.js"
   ]
 }

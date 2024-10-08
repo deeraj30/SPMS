@@ -34,7 +34,7 @@ const StudentHome = () => {
         <div className="right-side">
           <div className="student-info">
             <img
-              src="/path/to/student-photo.jpg" // Replace with actual image path
+              src={studentProfile.image} // Display the uploaded image
               alt="Student"
               className="student-photo"
             />
@@ -65,7 +65,7 @@ const StudentHome = () => {
           <p><strong>Email:</strong> {studentProfile.email}</p>
           <p><strong>Phone Number:</strong> {studentProfile.phone}</p>
           <p><strong>DOB:</strong> {studentProfile.dob}</p>
-          <p><strong>Selected Courses:</strong> JAVA FULL STACK WEB DEVELOPMENT, Computer Science</p> {/* Hardcoded, you can make this dynamic too */}
+          <p><strong>Projects:</strong> {studentProfile.projects ? studentProfile.projects.join(', ') : 'No projects available'}</p> {/* Display project names */}
           <p><strong>Mentor Name:</strong> {studentProfile.mentor}</p> {/* Displays the mentor name */}
         </div>
       )}

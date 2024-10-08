@@ -1,6 +1,5 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
 import Home from './components/Home';
 import StudentLogin from './components/Student_Login';
 import MentorLogin from './components/Mentor_Login';
@@ -23,7 +22,7 @@ import Cricket from './components/Cricket'; // Import Cricket.js
 
 const App = () => {
   return (
-    <Router basename="/SPMS_react_SpringBoot"> {/* Add basename for GitHub Pages */}
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/student-login" element={<StudentLogin />} />
@@ -40,7 +39,7 @@ const App = () => {
         <Route path="/projects" element={<MentorProjects />} />
         <Route path="/students-list" element={<MentorStudentsList />} />
         <Route path="/submissions" element={<MentorSubmissions />} />
-        <Route path="/mentor-notifications" element={<MentorNotifications />} /> {/* Avoid duplicate route */}
+        <Route path="/mentor-notifications" element={<MentorNotifications />} />
         <Route path="/milestones" element={<MentorMilestones />} />
         <Route path="/projects/cricket" element={<Cricket />} /> {/* Cricket project route */}
         <Route path="/projects/1" element={<Ai />} /> {/* AI project route */}

@@ -30,12 +30,12 @@ const MentorHome = () => {
     <div className="mentor-home-container">
       <header className="navbar">
         <div className="left-side">
-          <h1>Assignment Management System</h1>
+          <h1>Student Group Project Management System</h1>
         </div>
         <div className="right-side">
           <div className="mentor-info">
             <img
-              src="/path/to/mentor-photo.jpg" // Replace with actual image path
+              src={require('../assets/mentor.jpeg')} // Update to correct image path
               alt="Mentor"
               className="mentor-photo"
             />
@@ -44,7 +44,7 @@ const MentorHome = () => {
           <div className="buttons">
             <button className="profile-button" onClick={() => navigate('/mentor-profile')}>Profile</button>
             <button className="logout-button" onClick={handleLogout}>Log Out</button>
-            <button className="login-button" onClick={handleMentorLogin}>Mentor Login</button> {/* New Mentor Login button */}
+            <button className="login-button" onClick={handleMentorLogin}>Mentor Login</button>
           </div>
         </div>
       </header>
@@ -52,7 +52,7 @@ const MentorHome = () => {
       {/* Center Navbar */}
       <nav className="center-navbar">
         <ul>
-          <li><Link to="/dashboard">Dashboard</Link></li>
+          <li><Link to="/mentor-dashboard">Dashboard</Link></li>
           <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/students-list">Students List</Link></li>
           <li><Link to="/submissions">Submissions</Link></li>

@@ -1,124 +1,125 @@
 html, body {
-  height: 100%; /* Ensure the body takes full height */
-  margin: 0; /* Remove default margin */
-  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  background-color: #cce7ff; /* Light blue background */
+  font-family: Arial, sans-serif;
 }
 
 .signup-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the items vertically */
-  min-height: 100vh; /* Ensure it takes full viewport height */
-  background: url('../assets/photo.png') repeat-x; /* Set the background image */
-  background-size: cover; /* Ensure the background image covers the viewport */
-  animation: moveBackground 20s linear infinite; /* Background animation */
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
   padding: 20px;
-  width: 100%; /* Full width */
-  overflow-y: auto; /* Allow vertical scrolling if needed */
-}
-
-@keyframes moveBackground {
-  0% {
-    background-position: 0 0; /* Start position */
-  }
-  100% {
-    background-position: -2000px 0; /* Move the background to the left */
-  }
+  width: 100%;
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  max-width: 500px; /* Fixed max-width for the form */
-  width: 100%; /* Full width for smaller screens */
+  background-color: #ffffff;
+  padding: 40px 40px 20px; /* Adjusted bottom padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 650px; /* Increased from 600px to 650px for better spacing */
+  width: 100%;
   display: flex;
-  flex-direction: column; /* Vertical layout for form elements */
-  margin: 0 auto; /* Center the form */
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 form h2 {
-  margin-bottom: 20px;
-  font-size: 24px; /* Font size for heading */
-  color: #444; /* Text color */
-  text-align: center; /* Center the heading text */
+  margin: 0 0 24px 0; /* Added margin bottom to separate heading from input fields */
+  font-size: 28px;
+  color: #007bff; /* Accent color */
+  text-align: center;
 }
 
 form input, form select {
-  width: 100%; /* Full width for inputs */
-  padding: 15px; /* Padding for comfort */
-  margin-bottom: 20px; /* Space between elements */
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 8px; /* Rounded corners */
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 form button {
-  width: 100%; /* Full width for button */
-  padding: 15px; /* Padding for button */
-  background-color: #6c63ff; /* Primary color */
-  color: #fff; /* Text color */
-  border: none; /* Remove border */
-  border-radius: 8px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth transition on hover */
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff; /* Primary color */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #5548c8; /* Darker shade on hover */
+  background-color: #0056b3;
 }
 
 form button:disabled {
-  background-color: #ccc; /* Disabled state */
-  cursor: not-allowed; /* Change cursor to indicate disabled */
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 /* Scrollbar styles */
 .signup-container::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 10px;
 }
 
 .signup-container::-webkit-scrollbar-thumb {
-  background-color: #6c63ff; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  background-color: #007bff;
+  border-radius: 10px;
 }
 
 .signup-container::-webkit-scrollbar-thumb:hover {
-  background-color: #5548c8; /* Darker shade on hover */
+  background-color: #0056b3;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+  }
+
   form {
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 20px;
+    max-width: 90%; /* Adjust width for smaller screens */
   }
 
   form input, form select {
-    padding: 12px; /* Adjust input padding */
+    padding: 12px;
   }
 
   form button {
-    padding: 12px; /* Adjust button padding */
+    padding: 12px;
   }
 }
 
-/* Additional styling for buttons outside the form */
+/* Additional styling for buttons at the bottom */
 .button-container {
   display: flex;
-  justify-content: space-between; /* Space out buttons */
-  margin-top: 20px; /* Space above button container */
+  justify-content: space-between;
+  width: 100%; /* Make container full width */
+  max-width: 650px; /* Align width with form */
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .login-button, .home-button {
-  flex: 1; /* Allow buttons to take equal space */
-  margin: 0 5px; /* Space between buttons */
-  padding: 15px; /* Padding for buttons */
-  background-color: #6c63ff; /* Primary color */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  border-radius: 8px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth transition on hover */
+  flex: 1;
+  margin: 0 5px;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Adjust font size for better fit */
+  cursor: pointer;
 }
 
 .login-button:hover, .home-button:hover {
-  background-color: #5548c8; /* Darker shade on hover */
+  background-color: #0056b3;
 }

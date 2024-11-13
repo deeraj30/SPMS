@@ -1,47 +1,64 @@
-/* src/components/Home.css */
+/* Ensure the entire background is white */
+body, html {
+  background-color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+  overflow: hidden; /* Hides both vertical and horizontal scrollbars */
+}
 
+/* Flex container for home page layout */
 .home-container {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background: url('../assets/picc.png') repeat-x; /* Set the image and repeat horizontally */
-  background-size: cover;
-  background-position: center;
-  animation: moveBackground 20s linear infinite; /* Add animation for movement */
+  justify-content: flex-start;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-@keyframes moveBackground {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -1000px 0; /* Adjust for the speed and movement */
-  }
-}
-
+/* Styling for overlay container */
 .overlay {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay on the image */
-  padding: 50px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
+/* Styling for project title */
+.project-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #28a745; /* Green color for title text */
+}
+
+/* Styling for login links */
 .login-links {
   display: flex;
   gap: 20px;
 }
 
+/* Green background for login buttons */
 .login-button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #28a745; /* Set green background for buttons */
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 18px;
   transition: background-color 0.3s ease;
+  color: inherit; /* Inherit the color from the parent element */
 }
 
+/* Hover effect for login buttons */
 .login-button:hover {
-  background-color: #0056b3;
+  background-color: #218838; /* Darker green on hover */
 }

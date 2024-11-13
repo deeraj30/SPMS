@@ -115,7 +115,7 @@ const Signup = () => {
         />
 
         {/* Project Names Input */}
-        <label htmlFor="projects">Enter Project Names (comma separated)</label>
+        <label htmlFor="projects">Enter Project Names</label>
         <input
           id="projects"
           type="text"
@@ -134,7 +134,6 @@ const Signup = () => {
           onChange={(e) => setPassword(e.target.value)} 
           required 
         />
-
         <label htmlFor="image">Upload Image</label>
         <input 
           id="image"
